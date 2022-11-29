@@ -11,7 +11,7 @@ GitHub or GitLab.
 
 ## How to get the project running 
 
--Load data from an external source (API)
+- Load data from an external source (API)
 - View a list of items.
 - On user action (e.g., by clicking on a list item), view details for that item.
 
@@ -20,7 +20,7 @@ GitHub or GitLab.
 
 ### Required:
 
-- The app *must* load data from an external API; for instance, the [Pokémon API] (https://pokeapi.co/).
+- The app *must* load data from an external API; for instance, the [Pokémon API](https://pokeapi.co/).
 - The app *must* display a list of items loaded from that API after the page is loaded.
 - The app *must* enable the viewing of more details for a given list item (like a Pokémon) on
 demand, such as when clicking on a list item.
@@ -32,7 +32,7 @@ demand, such as when clicking on a list item.
 touch interactions.
     - The app *may* allow searching for items (e.g., searching for Pokémon).
 - The app *must* not throw any errors when being used.
-- The app **should** be deployed to a publicly accessible platform like GitHub Pages (you can review how to do this in Intro to Frontend Development's [Exercise 10: Code Quality, Testing, & Web Hosting] (https://careerfoundry.com/en/steps/code-quality-testing-web-hosting)).
+- The app **should** be deployed to a publicly accessible platform like GitHub Pages (you can review how to do this in Intro to Frontend Development's [Exercise 10: Code Quality, Testing, & Web Hosting](https://careerfoundry.com/en/steps/code-quality-testing-web-hosting)).
 - The app *must* work in Chrome, Firefox, Safari, Edge, and Internet Explorer 11.
 
 ### Nice to Have:
@@ -43,4 +43,4 @@ error messages.
 
 ## Which API the project uses 
 
-- [Pokémon API] (https://pokeapi.co/)
+- [Pokémon API](https://pokeapi.co/)
