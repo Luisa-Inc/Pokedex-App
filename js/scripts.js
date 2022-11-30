@@ -6,9 +6,13 @@
     
 ];
 
-for (let i= 0; i< pokemonList.length; i++) {
-  if(pokemonList[i].height >= 1) {
-      document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')' + ' wow, that is big!<br>')
+for (let i= 0; i < pokemonList.length; i++) {
+
+  if (pokemonList[i].height >= 0.5) {
+      console.log(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')' + ' wow, that is big!<br>');
   }
-  else{ document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')<br>')}
+ 
+  else if (pokemonList[i].height < 0.5) {
+      console.log(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')' + ' hey, you can still grow!<br>');
+  }
 }
