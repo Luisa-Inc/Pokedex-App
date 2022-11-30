@@ -1,0 +1,31 @@
+:root {
+    --background-color: #fffafa;
+    --primary-color: #008080;
+    --text-color: #2b2b2b;
+    --white: white;
+    --heading__font-weight: 900;
+    
+  }
+  
+    body {
+      background-color: var(--background-color);
+      font-family: 'Roboto Slab', serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.6; 
+    }
+  
+    h1 {
+      font-size: 30px;
+      font-weight: var(--heading__font-weight);
+    }
+    
+    h2 {
+      font-size: 24px;
+      font-weight: var(--heading__font-weight);
+    }
+    
+    h3 {
+      font-size: 18px;
+      font-weight: var(--heading__font-weight);
+    }
