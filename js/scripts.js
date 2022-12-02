@@ -9,13 +9,11 @@
     
 ];
 
-//create 'for loop' that prints out "wow that is big!" if the pokemon is bigger than or equals 0.7 meter
 
+// pokemon list 'for each' function
 
-for (let i= 0; i< pokemonList.length; i++) {
-  if(pokemonList[i].height >= 0.7) {
-      document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')' + ' Wow, that is big!<br>')
-  }
-  else{ document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')<br>')}
+function pokemonList(user) {
+  console.log(user.name + ' is ' + user.height + ' meters tall and of the following pokemon type: ' +  user.type);
 }
 
+userList.forEach(pokemonList);
