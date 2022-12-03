@@ -1,17 +1,44 @@
-  //create an array 'userList' that shows at least 3 objects with names, heights and types
-
-
-  let userList = [
+/*let pokemonList = [
     
-    { name: 'Bulbasaur', height: 0.7, type: ['grass', 'poison'] },
-    { name: 'Charmander', height: 0.6, type: 'fire'},
-    { name: 'Pikachu', height: 0.4, type: 'electric'},
-    
-];
+  { name: 'Bulbasaur', height: 0.7, type: ['grass', 'poison'] },
+  { name: 'Charmander', height: 0.6, type: ['fire']},
+  { name: 'Pikachu', height: 0.4, type: ['electric']},
+
+]*/
 
 
 // pokemon list 'for each' function
 
-userList.forEach(function(user) {
-  console.log(user.name + ' is ' + user.height + ' meters tall and of the following pokemon type: ' +  user.type);
+pokemonList.forEach(function(pokemon) {
+  console.log(pokemon.name + ' is ' + pokemon.height + ' meters tall and of the following pokemon type: ' +  pokemon.type);
 });
+
+
+// IIFE 
+
+
+let pokemonRepository = (function () {
+  let pokemonList = [
+      { name: 'Bulbasaur', height: 0.7, type: ['grass', 'poison'] },
+      { name: 'Charmander', height: 0.6, type: ['fire'] },
+      { name: 'Pikachu', height: 0.4, type: ['electric'] },
+      
+  ];
+
+  function getAll() {
+    return pokemonList;
+  }
+
+  function add(pokemon) { 
+    if (typeof pokemon === 'object' && 'name' in pokemon){
+    pokemonList.push(pokemon);
+  }
+}
+
+return {
+  getAll: getAll,
+  add: add,
+
+}
+
+})()
