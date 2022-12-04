@@ -7,13 +7,6 @@ let pokemonList = [
 ]
 
 
-// pokemon list 'for each' function
-
-pokemonList.forEach(function(pokemon) {
-  console.log(pokemon.name + ' is ' + pokemon.height + ' meters tall and of the following pokemon type: ' +  pokemon.type);
-});
-
-
 // IIFE 
 
 
@@ -35,10 +28,40 @@ let pokemonRepository = (function () {
   }
 }
 
-return {
-  getAll: getAll,
-  add: add,
+// create new 'addListItem' and add event listener 'button'
+
+
+  function addListItem(pokemon) {
+    let pokemonList = document.querySelector('.pokemon-list');
+    let listItem = document.createElement('li');
+    let button = document.createElement('button');
+    button.innerText = pokemon.name;
+    button.classList.add('pokemon-button');
+    listItem.appendChild(button);
+    pokemonList.appendChild(listItem);
+    button.addEventListener('click', function(event) {
+      showDetails(pokemon);
+
+  });
 
 }
 
+
+return {
+  getAll: getAll,
+  add: add,
+  addListItem: addListItem,
+}
+
 })()
+
+// pokemon list 'for each' function
+
+pokemonList.forEach(function(pokemon) {
+  console.log(pokemon.name + ' is ' + pokemon.height + ' meters tall and of the following pokemon type: ' +  pokemon.type);
+});
+
+pokemonRepository.getAll().forEach(function(pokemon) {
+  console.log(pokemon)
+  })
+  
