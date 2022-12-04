@@ -1,12 +1,3 @@
-let pokemonList = [
-    
-  { name: 'Bulbasaur', height: 0.7, type: ['grass', 'poison'] },
-  { name: 'Charmander', height: 0.6, type: ['fire']},
-  { name: 'Pikachu', height: 0.4, type: ['electric']},
-
-]
-
-
 // IIFE 
 
 
@@ -53,15 +44,14 @@ return {
   addListItem: addListItem,
 }
 
-})()
+})();
 
-// pokemon list 'for each' function
 
-pokemonList.forEach(function(pokemon) {
-  console.log(pokemon.name + ' is ' + pokemon.height + ' meters tall and of the following pokemon type: ' +  pokemon.type);
-});
-
-pokemonRepository.getAll().forEach(function(pokemon) {
-  console.log(pokemon)
+let pokemon1 = 
+    { name: 'Ivaysuer', height: 0.3, type: ['fire'] }; 
+    
+  pokemonRepository.add(pokemon1); 
+    pokemonRepository.getAll().forEach(function(pokemon){ 
+      pokemonRepository.addListItem(pokemon) 
   })
   
