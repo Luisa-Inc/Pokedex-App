@@ -31,10 +31,11 @@ let pokemonRepository = (function () {
     listItem.appendChild(button);
     pokemonList.appendChild(listItem);
     button.addEventListener('click', function(event) {
-			showDetails(pokemon)
+      showDetails(pokemon)
 		})
 	}
-	function showDetails(pokemon) {
+  
+  function showDetails(pokemon) {
 		console.log(pokemon);
     }
 
