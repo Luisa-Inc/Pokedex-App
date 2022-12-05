@@ -31,17 +31,19 @@ let pokemonRepository = (function () {
     listItem.appendChild(button);
     pokemonList.appendChild(listItem);
     button.addEventListener('click', function(event) {
-      showDetails(pokemon);
+			showDetails(pokemon)
+		})
+	}
+	function showDetails(pokemon) {
+		console.log(pokemon);
+    }
 
-  });
-
-}
-
-
+    
 return {
   getAll: getAll,
   add: add,
   addListItem: addListItem,
+
 }
 
 })();
@@ -53,5 +55,7 @@ let pokemon1 =
   pokemonRepository.add(pokemon1); 
     pokemonRepository.getAll().forEach(function(pokemon){ 
       pokemonRepository.addListItem(pokemon) 
+
+      
   })
   
