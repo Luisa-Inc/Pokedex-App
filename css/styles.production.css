@@ -46,7 +46,7 @@
   .pokemon-button {
     background-color: lightskyblue;
     border: none;
-    color: black;
+    color: #db5ed5;
     display: inline-flex;
     flex-direction: column;
     margin: 4px;
