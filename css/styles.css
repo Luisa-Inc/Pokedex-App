@@ -46,7 +46,7 @@
       background-color: lightskyblue;
       border: none;
       color: black;
-      display: inline;
+      display: inline-flex;
       flex-direction: column;
       margin: 4px;
       padding: 16px 32px;
