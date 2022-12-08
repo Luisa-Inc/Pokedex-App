@@ -1,4 +1,4 @@
-# simple-js-app
+# Pokedex App
 
 ## Project description 
 
