@@ -7,9 +7,6 @@
   
 }
 
-* {
-  box-sizing: border-box;
-}
 
   body {
     background-color: var(--background-color);
@@ -47,8 +44,6 @@
     background-color: #f8f9fa;
     border: none;
     color: black;
-    display: inline-flex;
-    flex-direction: column;
     margin: 4px;
     padding: 16px;
     text-align: center;
