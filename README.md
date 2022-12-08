@@ -20,6 +20,27 @@ GitHub or GitLab.
 
 ### Required:
 
+
+- JavaScript version: ES6
+- Bootstrap version: v5.2.x
+- ESLint rules:
+
+```
+{
+    "env": {
+        "es6": true,
+        "browser": true
+    },
+    "extends": [
+        "eslint:recommended"
+    ],
+    "rules": {
+        "quotes": ["error", "single"]
+    }
+}
+
+```
+
 - The app *must* load data from an external API; for instance, the [Pokémon API](https://pokeapi.co/).
 - The app *must* display a list of items loaded from that API after the page is loaded.
 - The app *must* enable the viewing of more details for a given list item (like a Pokémon) on
