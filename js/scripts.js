@@ -408,7 +408,7 @@ let pokemon1 =
           };
         
         }) ();
-        
+
         pokemonRepository.loadList().then(function() {
           pokemonRepository.getAll().forEach(printDetails);
           function printDetails (pokemon) {
@@ -417,4 +417,3 @@ let pokemon1 =
         
           
         });
-        
