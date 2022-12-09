@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 3 version
+*/
+
 :root {
   --background-color: #008080;
   --primary-color: #fffafa;
@@ -17,6 +24,7 @@
   h1 {
     font-size: 30px;
     font-weight: var(--heading__font-weight);
+    color: white;
   }
   
   h2 {
@@ -29,12 +37,19 @@
     font-weight: var(--heading__font-weight);
   }
 
+  p {
+    font-size: 16px;
+    font-weight: var(--heading__font-weight);
+    color: white;
+  }
+
   .intro {
     margin-top:30px;
   }
   
   nav.navbar {
-    box-shadow: 1px 1px 1px 1px lightslategrey;
+    -webkit-box-shadow: 1px 1px 1px 1px lightslategrey;
+            box-shadow: 1px 1px 1px 1px lightslategrey;
     background-color: white;
   }
   

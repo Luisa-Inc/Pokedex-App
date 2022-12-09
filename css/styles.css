@@ -17,6 +17,7 @@
     h1 {
       font-size: 30px;
       font-weight: var(--heading__font-weight);
+      color: white;
     }
     
     h2 {
@@ -27,6 +28,12 @@
     h3 {
       font-size: 18px;
       font-weight: var(--heading__font-weight);
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: var(--heading__font-weight);
+      color: white;
     }
 
     .intro {
