@@ -1,4 +1,4 @@
-        let pokemonRepository = (function () {
+let pokemonRepository = (function () {
 	
           let pokemonList = [];
           let apiURL = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
@@ -47,9 +47,14 @@
             let nameElement = document.createElement('h1');
             nameElement.innerText = pokemon.name;
         
-            let heightElement = $('<p >' + 'Height: ' + pokemon.height + '</p>');
-            let weightElement = $('<p>' + 'Weight: ' + pokemon.weight + '</p>');
-            let typesElement = $('<p>' + 'Type: ' + pokemon.types + '</p>');
+            let heightElement = document.createElement('p');
+            heightElement.innerText = 'Height: ' + pokemon.height;
+
+            let weightElement = document.createElement('p');
+            weightElement.innerText = 'Weight: ' + pokemon.weight;
+
+            let typesElement = document.createElement('p');
+            typesElement.innerText = 'Type: ' + pokemon.types;
         
             let imageElement = document.createElement('img');
             imageElement.classList.add('modal-image');
