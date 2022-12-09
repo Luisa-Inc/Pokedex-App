@@ -7,7 +7,7 @@
             if (typeof pokemon === 'object' && pokemon.name && pokemon.detailsUrl) {
               pokemonList.push(pokemon);
             } else {
-              return `${pokemon} is not a Pokemon. Pokemon must be an object with the keys name, height and type`;
+              return `${pokemon} is not a Pokemon. Pokemon must be an object with the keys name, height, weight and type`;
             }
           }
         
@@ -49,6 +49,12 @@
         
             let heightElement = document.createElement('p');
             heightElement.innerText = 'Height: ' + pokemon.height;
+
+            let weightElement = document.createElement('p');
+            weightElement.innerText = 'Weight: ' + pokemon.weight;
+
+            let typesElement = document.createElement('p');
+            typesElement.innerText = 'Type: ' + pokemon.types;
         
             let imageElement = document.createElement('img');
             imageElement.classList.add('modal-image');
@@ -56,6 +62,8 @@
         
             modalTitle.appendChild(nameElement);
             modalBody.appendChild(heightElement);
+            modalBody.appendChild(weightElement);
+            modalBody.appendChild(typesElement);
             modalBody.appendChild(imageElement);
           }
         
@@ -87,6 +95,7 @@
             }).then(function(details) {
               item.imageUrl = details.sprites.front_default;
               item.height = details.height;
+              item.weight = details.weight;
               item.type = details.types;
               hideLoadingMessage();
             }).catch(function(e) {
