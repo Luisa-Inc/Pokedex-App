@@ -1,12 +1,10 @@
 :root {
   --background-color: #008080;
   --primary-color: #fffafa;
-  --text-color: #2b2b2b;
-  --white: white;
+  --text-color: white;
   --heading__font-weight: 1300;
   
 }
-
 
   body {
     background-color: var(--background-color);
@@ -52,7 +50,7 @@
   }
   
   .pokemon-button:hover {
-    background-color:darkblue;
+    background-color:darkblue ;
     color: white;
     cursor: pointer;
   }
