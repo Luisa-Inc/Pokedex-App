@@ -1,14 +1,6 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 3 version
-*/
-
 :root {
   --background-color: #008080;
   --primary-color: #fffafa;
-  --text-color: white;
   --heading__font-weight: 1300;
   
 }
@@ -35,12 +27,13 @@
   h3 {
     font-size: 18px;
     font-weight: var(--heading__font-weight);
+    color: white;
   }
 
   p {
     font-size: 16px;
     font-weight: var(--heading__font-weight);
-    color: white;
+    color: black;
   }
 
   .intro {
@@ -48,8 +41,7 @@
   }
   
   nav.navbar {
-    -webkit-box-shadow: 1px 1px 1px 1px lightslategrey;
-            box-shadow: 1px 1px 1px 1px lightslategrey;
+    box-shadow: 1px 1px 1px 1px lightslategrey;
     background-color: white;
   }
   
@@ -72,4 +64,70 @@
   
   .modal-image {
     width: 50%;
+  }:root {
+    --background-color: #008080;
+    --primary-color: #fffafa;
+    --heading__font-weight: 1300;
+    
   }
+  
+    body {
+      background-color: var(--background-color);
+      font-family: 'Roboto Slab';
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 1.6; 
+    }
+  
+    h1 {
+      font-size: 30px;
+      font-weight: var(--heading__font-weight);
+      color: white;
+    }
+    
+    h2 {
+      font-size: 24px;
+      font-weight: var(--heading__font-weight);
+    }
+    
+    h3 {
+      font-size: 18px;
+      font-weight: var(--heading__font-weight);
+      color: white;
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: var(--heading__font-weight);
+      color: black;
+    }
+
+    .intro {
+      margin-top:30px;
+    }
+    
+    nav.navbar {
+      box-shadow: 1px 1px 1px 1px lightslategrey;
+      background-color: white;
+    }
+    
+    .pokemon-button {
+      background-color: #f8f9fa;
+      border: none;
+      color: black;
+      margin: 4px;
+      padding: 16px;
+      text-align: center;
+      text-decoration: none;
+      width: 50%;
+    }
+    
+    .pokemon-button:hover {
+      background-color:darkblue ;
+      color: white;
+      cursor: pointer;
+    }
+    
+    .modal-image {
+      width: 50%;
+    }
