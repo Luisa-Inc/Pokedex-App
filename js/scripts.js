@@ -47,14 +47,9 @@
             let nameElement = document.createElement('h1');
             nameElement.innerText = pokemon.name;
         
-            let heightElement = document.createElement('p');
-            heightElement.innerText = 'Height: ' + pokemon.height;
-
-            let weightElement = document.createElement('p');
-            weightElement.innerText = 'Weight: ' + pokemon.weight;
-
-            let typesElement = document.createElement('p');
-            typesElement.innerText = 'Type: ' + pokemon.types;
+            let heightElement = $('<p >' + 'Height: ' + pokemon.height + '</p>');
+            let weightElement = $('<p>' + 'Weight: ' + pokemon.weight + '</p>');
+            let typesElement = $('<p>' + 'Type: ' + pokemon.types + '</p>');
         
             let imageElement = document.createElement('img');
             imageElement.classList.add('modal-image');
@@ -96,7 +91,7 @@
               item.imageUrl = details.sprites.front_default;
               item.height = details.height;
               item.weight = details.weight;
-              item.type = details.types;
+              item.types = details.types;
               hideLoadingMessage();
             }).catch(function(e) {
               console.error(e);
