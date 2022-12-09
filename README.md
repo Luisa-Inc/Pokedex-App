@@ -2,24 +2,21 @@
 
 ## Project description 
 
-- A small web application with HTML, CSS, and JavaScript that loads
-data from an external API and enables the viewing of data points in detail.
-- The code for the app can always be viewed in a repository like
-GitHub or GitLab.
-- Users should be able to view a list of data and see more details for a given data item on demand.
+- A small pokemon web application with HTML, CSS, and JavaScript that loads data from an external [Pokémon API](https://pokeapi.co/) and enables the viewing of data points in detail. 
+- In this case, the user sees a list of pokemons by name. When clicking on them, details for height, weight, types and abilities as well as an image is shown to the user.
+- The code for the app can always be viewed in a repository on [GitHub](https://github.com/Luisa-Inc/Pokedex-App).
+- The live app is accessible through the following [link](https://luisa-inc.github.io/Pokedex-App/)
+
 
 
 ## How to get the project running 
 
-- Load data from an external source (API)
+- Load data from an external source (API).
 - View a list of items.
-- On user action (e.g., by clicking on a list item), view details for that item.
+- On user action (by clicking on a list item), view details for that item.
 
 
 ## Project dependencies 
-
-### Required:
-
 
 - JavaScript version: ES6
 - Bootstrap version: v5.2.x
@@ -41,27 +38,15 @@ GitHub or GitLab.
 
 ```
 
-- The app *must* load data from an external API; for instance, the [Pokémon API](https://pokeapi.co/).
-- The app *must* display a list of items loaded from that API after the page is loaded.
-- The app *must* enable the viewing of more details for a given list item (like a Pokémon) on
-demand, such as when clicking on a list item.
-- The app *must* have CSS styling.
-- The JavaScript code *must* be formatted according to ESLint rules.
-    - The JavaScript code *may* be formatted via Prettier.
-    - The JavaScript code *may* be manually formatted.
-- The app *must* use at least one additional complex UI pattern, such as a modal, for details or
+- The app loads data from an external API, the [Pokémon API](https://pokeapi.co/).
+- The app displays a list of items loaded from that API after the page is loaded.
+- The app enables the viewing of more details for a given list item (a pokemon) on
+demand, when clicking on a list item.
+- The app has CSS styling.
+- The JavaScript code is formatted according to ESLint rules.
+    - The JavaScript code is manually formatted.
+- The app uses additional complex UI pattern, a modal, for details or
 touch interactions.
-    - The app *may* allow searching for items (e.g., searching for Pokémon).
-- The app *must* not throw any errors when being used.
-- The app **should** be deployed to a publicly accessible platform like GitHub Pages (you can review how to do this in Intro to Frontend Development's [Exercise 10: Code Quality, Testing, & Web Hosting](https://careerfoundry.com/en/steps/code-quality-testing-web-hosting)).
-- The app *must* work in Chrome, Firefox, Safari, Edge, and Internet Explorer 11.
-
-### Nice to Have:
-
-- The app should show loading indicators while loading data.
-- The app should handle errors (such as trying to load data while offline) and show user-friendly
-error messages.
-
-## Which API the project uses 
-
-- [Pokémon API](https://pokeapi.co/)
+    - The app allows searching for items (pokemons).
+- The app does not throw any errors when being used.
+- The app works in Chrome, Firefox, Safari, Edge, and Internet Explorer 11.
