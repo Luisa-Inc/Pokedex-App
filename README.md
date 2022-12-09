@@ -5,7 +5,7 @@
 - A small pokemon web application with HTML, CSS, and JavaScript that loads data from an external [Pokémon API](https://pokeapi.co/) and enables the viewing of data points in detail. 
 - In this case, the user sees a list of pokemons by name. When clicking on them, details for height, weight, types and abilities as well as an image is shown to the user.
 - The code for the app can always be viewed in a repository on [GitHub](https://github.com/Luisa-Inc/Pokedex-App).
-- The live app is accessible through the following [link](https://luisa-inc.github.io/Pokedex-App/)
+- The live app is accessible through the following [link](https://luisa-inc.github.io/Pokedex-App/).
 
 
 
