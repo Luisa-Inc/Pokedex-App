@@ -55,6 +55,9 @@ let pokemonRepository = (function () {
 
             let typesElement = document.createElement('p');
             typesElement.innerText = 'Type: ' + pokemon.types;
+
+            let abilitiesElement = document.createElement('p');
+            abilitiesElement.innerText = 'Abilities: ' + pokemon.abilities;
         
             let imageElement = document.createElement('img');
             imageElement.classList.add('modal-image');
@@ -64,6 +67,7 @@ let pokemonRepository = (function () {
             modalBody.appendChild(heightElement);
             modalBody.appendChild(weightElement);
             modalBody.appendChild(typesElement);
+            modalBody.append(abilitiesElement);
             modalBody.appendChild(imageElement);
           }
         
@@ -96,7 +100,15 @@ let pokemonRepository = (function () {
               item.imageUrl = details.sprites.front_default;
               item.height = details.height;
               item.weight = details.weight;
-              item.types = details.types;
+              item.types = details.types.map(function (item) {
+                return item.type.name;
+              });
+              item.abilities = [];
+              for (var i = 0; i < details.abilities.length; i++) {
+                item.abilities.push(details.abilities[i].ability.name);
+              
+              }
+
               hideLoadingMessage();
             }).catch(function(e) {
               console.error(e);
