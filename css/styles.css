@@ -1,67 +1,100 @@
 :root {
-    --background-color: #008080;
-    --primary-color: #fffafa;
-    --heading__font-weight: 1300;
-    
+  --background-color: #008080;
+  --primary-color: #fffafa;
+  --heading__font-weight: 1300;
+  
+}
+
+  body {
+    background-color: var(--background-color);
+    font-family: 'Roboto Slab';
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.6; 
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: var(--heading__font-weight);
+    color: white;
   }
   
-    body {
-      background-color: var(--background-color);
-      font-family: 'Roboto Slab';
-      font-weight: 900;
-      font-size: 16px;
-      line-height: 1.6; 
-    }
+  h2 {
+    font-size: 24px;
+    font-weight: var(--heading__font-weight);
+  }
   
-    h1 {
-      font-size: 30px;
-      font-weight: var(--heading__font-weight);
-      color: white;
-    }
-    
-    h2 {
-      font-size: 24px;
-      font-weight: var(--heading__font-weight);
-    }
-    
-    h3 {
-      font-size: 18px;
-      font-weight: var(--heading__font-weight);
-      color: white;
-    }
+  h3 {
+    font-size: 18px;
+    font-weight: var(--heading__font-weight);
+    color: white;
+  }
 
-    p {
-      font-size: 16px;
-      font-weight: var(--heading__font-weight);
-      color: black;
-    }
+  p {
+    font-size: 16px;
+    font-weight: var(--heading__font-weight);
+    color: black;
+  }
 
-    .intro {
-      margin-top:30px;
-    }
-    
-    nav.navbar {
-      box-shadow: 1px 1px 1px 1px lightslategrey;
-      background-color: white;
-    }
-    
-    .pokemon-button {
-      background-color: #f8f9fa;
-      border: none;
-      color: black;
-      margin: 4px;
-      padding: 16px;
-      text-align: center;
-      text-decoration: none;
-      width: 50%;
-    }
-    
-    .pokemon-button:hover {
-      background-color:darkblue ;
-      color: white;
-      cursor: pointer;
-    }
-    
-    .modal-image {
-      width: 50%;
-    }
+  .intro {
+    margin-top:30px;
+  }
+  
+  .pokemon-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    width: 90%;
+    max-width: 1280px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 300px);
+  }
+
+  .list-group-item {
+    position: relative;
+    display: block;
+    background: none;
+    border: none;
+
+  }
+
+  nav.navbar {
+    box-shadow: 1px 1px 1px 1px lightslategrey;
+    background-color: white;
+  }
+  
+  .pokemon-button {
+    background-color: #f8f9fa;
+    color: black;
+    margin: 4px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 90%;
+  }
+  
+  .pokemon-button:hover {
+    background-color:lightslategrey;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .modal-image {
+    width: 50%;
+  }
+
+  .btn-outline-primary {
+    --bs-btn-color: lightslategrey;
+    --bs-btn-border-color: lightslategrey;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: lightslategrey;
+    --bs-btn-hover-border-color: lightslategrey;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: lightslategrey;
+    --bs-btn-active-border-color: lightslategrey;
+    --bs-btn-disabled-color: lightslategrey;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: lightslategrey;
+    --bs-gradient: none;
+}
